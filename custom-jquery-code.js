@@ -301,3 +301,13 @@ $(function() {
     }
   });
 });
+
+/*if you used jquery code for single page not used in other pages so use (length 0) below example*/
+if ( jQuery('.element-item').length > 0 ) {
+	
+      var $grid = jQuery('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows'
+      });
+	
+    }/*if end*/
